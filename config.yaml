@@ -1,0 +1,8 @@
+AccessToken: 1a79d8a023fbd55da348b10730b3156522e9d899
+Search:
+    User: interviewstreet
+    Repo: hackerrank
+TimeLine:
+    Start: 2016-04-13
+    End: 2016-04-25
+Elasticsearch: http://kibana.vpc.hackerrank.com:9200/

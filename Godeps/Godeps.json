@@ -1,0 +1,31 @@
+{
+	"ImportPath": "github.com/rishiloyola/pr-stats",
+	"GoVersion": "go1.4",
+	"Deps": [
+		{
+			"ImportPath": "github.com/google/go-github/github",
+			"Rev": "7ec4e45f77474b3a7b7d9b7ef233a0cc8339ddf3"
+		},
+		{
+			"ImportPath": "github.com/google/go-querystring/query",
+			"Rev": "9235644dd9e52eeae6fa48efd539fdc351a0af53"
+		},
+		{
+			"ImportPath": "golang.org/x/net/context",
+			"Rev": "c95266fa704a83c2716406ae957772a273e1380d"
+		},
+		{
+			"ImportPath": "golang.org/x/oauth2",
+			"Rev": "c406a4cc4ba462e5dc2f16225c5bd9488f9cbe10"
+		},
+		{
+			"ImportPath": "gopkg.in/olivere/elastic.v3",
+			"Comment": "v3.0.39",
+			"Rev": "73f89d112813ccf7371fde236786092bfcd0691e"
+		},
+		{
+			"ImportPath": "gopkg.in/yaml.v2",
+			"Rev": "eca94c41d994ae2215d455ce578ae6e2dc6ee516"
+		}
+	]
+}
