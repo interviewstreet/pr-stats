@@ -142,12 +142,7 @@ func (a *agent) process(createdAt time.Time, id *int, closedAt *time.Time, merge
 		ListOptions: github.ListOptions{PerPage: 2},
 	}
 	comments, _, err := a.client.Issues.ListComments(a.config.Search.User, a.config.Search.Repo, *id, optComments)
-	// optLabels := &github.ListOptions{
-	// 	Page: 1,
-	// 	PerPage: 10,
-	// }
-	// labels, _, err := a.client.Issues.ListLabelsByIssue(a.config.Search.User, a.config.Search.Repo, *id, optLabels)
-
+	
 	if _, ok := err.(*github.RateLimitError); ok {
 		log.Println("hit rate limit. Try after an hour.")
 		os.Exit(0)
