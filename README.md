@@ -34,7 +34,6 @@ Search:
 TimeLine:
     Start: 2016-04-13
     End: 2016-04-25
-Elasticsearch: http://kibana.vpc.hackerrank.com:9200/
 ```
 
 
