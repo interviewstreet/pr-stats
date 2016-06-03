@@ -165,9 +165,7 @@ func (a *agent) process(createdAt time.Time, id *int, closedAt *time.Time, merge
 				submitDuration = commentCreatedAt.Sub(a.endTime)
 			} //negative
 		}
-
 	} else {
-
 		if closedAt != nil {
 			commentDuration = 0
 			submitDuration = closedAt.Sub(createdAt)
@@ -178,7 +176,6 @@ func (a *agent) process(createdAt time.Time, id *int, closedAt *time.Time, merge
 			commentDuration = a.currentTime.Sub(createdAt)
 			submitDuration = 0
 		}
-
 	}
 
 	_commentDuration := strconv.Itoa(int(commentDuration.Hours() / 24))
@@ -217,8 +214,8 @@ func getName(user *github.User) string {
 func check(err error) {
 	if err != nil {
 		pc, _, line, _ := runtime.Caller(1)
-    	message := fmt.Sprintf("[error] %s[%d] %s", runtime.FuncForPC(pc).Name(), line, err.Error())
-    	log.Println(message)
-    	os.Exit(0)
+    		message := fmt.Sprintf("[error] %s[%d] %s", runtime.FuncForPC(pc).Name(), line, err.Error())
+    		log.Println(message)
+    		os.Exit(0)
 	}
 }
