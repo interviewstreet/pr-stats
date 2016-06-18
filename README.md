@@ -43,3 +43,8 @@ Run
 go build main.go
 go run main.go
 ```
+
+## License
+
+This software is available under [MIT license](https://github.com/interviewstreet/pr-stats/blob/master/LICENSE).
+
