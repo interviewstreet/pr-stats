@@ -43,6 +43,14 @@ Run
 go build main.go
 go run main.go
 ```
+The above commands store your data into .json file. Use Logstash to store your data in ES.
+
+Logstash Config
+---------
+Configure your logstash and store the data in ES instant by following command.
+```
+logstash -f logstash-filter.conf < github.json
+```
 
 ## License
 
