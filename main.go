@@ -23,7 +23,7 @@ type Data struct {
 }
 
 type Config struct {
-	AccessToken string `yaml:"AccessToken"` //mapping of the name.
+	AccessToken string `yaml:"AccessToken"` 
 	Search      struct {
 		User string `yaml:"User"`
 		Repo string `yaml:"Repo"`
@@ -32,6 +32,7 @@ type Config struct {
 		Start string `yaml:"Start"`
 		End   string `yaml:"End"`
 	} `yaml:"TimeLine"`
+	OutputFile string `yaml:"OutputFile"`
 }
 
 type agent struct {
@@ -70,7 +71,7 @@ func New() *agent {
 	currentTime.Format("2006-01-02")
 	a.currentTime = currentTime
 
-	a.file, err = os.Create("/Users/Rishi/.gvm/pkgsets/go1.4/global/src/github.com/rishiloyola/pr-stats/github.json")
+	a.file, err = os.Create(a.config.OutputFile)
 	check(err)
 
 	return a
